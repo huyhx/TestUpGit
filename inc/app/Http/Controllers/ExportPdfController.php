@@ -10,12 +10,18 @@ class ExportPdfController extends Controller
 {
     public function contract()
     {
-        $qr = '/images/image_35.png';
+        $qr = '/images/image_35111111111111111.png';
         $logo = '/images/logo.svg';
         return view('exports.pdf_template', compact('qr', 'logo'));
     }
 
     public function contractOrigin()
+    {
+        $qr = '/images/image_35.png';
+        return view('exports.pdf-origin', compact('qr'));
+    }
+
+    public function testContractOrigin()
     {
         $qr = '/images/image_35.png';
         return view('exports.pdf-origin', compact('qr'));
