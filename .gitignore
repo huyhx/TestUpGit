@@ -1,0 +1,4 @@
+inc/.env
+inc/storage/logs/*
+inc/storage/framework/*
+
